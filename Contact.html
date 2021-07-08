@@ -1,0 +1,87 @@
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Sparks Fundation</title>
+  <script>
+    function validation()
+    {
+     var name=document.getElementById("name").value;
+     var email=document.getElementById("email").value;
+     var subject=document.getElementById("subject").value;
+     var message=document.getElementById("message").value;
+     
+     if(name=="")
+     {
+       alert("Please Enter Name");
+     }
+     else if(email=="")
+     {
+       alert("Please Enter Email Id");
+     }
+     else if(subject=="")
+     {
+       alert("Please Enter subject");
+     }
+     else if(message=="")
+     {
+       alert("Please Write Message");
+     }
+     else 
+     {
+       alert("Message Send Successfully");
+     }
+    }
+  </script>
+</head>
+<body class="background">
+  <div>
+    <nav class="navbar">
+      <div class="logo">Sparks Foundation</div> 
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <form>
+    <div class="contact">
+    <table class="contact-table" width=60% >
+      <br>
+    <tr>
+    <td><label for="name">Name:</label></td>
+    <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+    </tr>
+    <tr>
+    <td><label for="name">Email:</label></td>
+    <td><input type="email" id="email" name="email" placeholder="Enter email address"></td>
+      <br></tr>
+    <tr>
+      <td><label for="name">Subject:</label></td>
+    <td><input type="text" id="subject" name="subject" placeholder="Enter Subject"></td>
+      <br><br></tr>
+    <tr>
+    <td><label for="name">Message:</label></td>
+    <td><textarea name="message" id="message" rows="3" placeholder="Enter Message"></textarea></td>
+    </tr>
+</table>
+      <br>
+    <div>
+    <button type="submit" value="submit" class="btn2" onclick="validation()" >Send Message</button></div>
+    <br><br>
+
+    </div>
+
+  </form>
+
+</div>
+
+ <footer>
+  <p class="footer">Copyright Sparks Foundation, All right reserved.Site developed and maintained by Shruthi Web Technologies.</p>
+</footer>
+
+</body>
+</html>
